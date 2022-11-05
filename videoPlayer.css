@@ -1,0 +1,9 @@
+#search_results {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+#search_results>div{
+    width:60%;
+    height: 400px;
+}
