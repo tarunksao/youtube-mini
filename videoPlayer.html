@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="./videoPlayer.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./navbar.css"
+		/>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./videoPlayer.css">
-    <link rel="stylesheet" href="./navbar.css">
-</head>
-
-<body>
-    <div id="navbar">
-        <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE54d8krphaVP1AQ1Jd4G1uRqLcA2N81TnA&usqp=CAU"
-                alt="">
-        </div>
-        <input type="text" id="query"><br>
-        <button onclick="getData()">Search</button>
-        <button id="sort" onclick="sortBy()">Filter By Channel Id</button>
-        <select id="order">
-            <option value="">Sort BY</option>
-            <option value="date">Upload Date</option>
-            <option value="viewCount">View Count</option>
-            <option value="rating">Rating</option>
-            <option value="relevance">Relevance</option>
-        </select>
-    </div>
-    <div id="search_results"></div>
-
-</body>
-
+	<body>
+		<div id="navbar">
+			<div>
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE54d8krphaVP1AQ1Jd4G1uRqLcA2N81TnA&usqp=CAU"
+					alt=""
+				/>
+			</div>
+			<input
+				type="text"
+				id="query"
+			/><br />
+			<button onclick="getData()">Search</button>
+			<button
+				id="sort"
+				onclick="sortBy()"
+			>
+				Filter By Channel Id
+			</button>
+			<select id="order">
+				<option value="">Sort BY</option>
+				<option value="date">Upload Date</option>
+				<option value="viewCount">View Count</option>
+				<option value="rating">Rating</option>
+				<option value="relevance">Relevance</option>
+			</select>
+		</div>
+		<div id="search_results"></div>
+	</body>
 </html>
 
 <script src="videoplayer.js"></script>
